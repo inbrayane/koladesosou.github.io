@@ -36,14 +36,88 @@
 
   <div class="section card">
     <h2>Mes projets</h2>
-    <p><strong>Mini site vitrine</strong> : une page HTML/CSS pour une boutique fictive</p>
-    <p><strong>Page de contact</strong> : formulaire simple avec HTML/CSS</p>
+      <!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio de Kolade</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; background: #f7f7f7; }
+    h1, h2 { color: #2c3e50; }
+    .section { margin-bottom: 30px; }
+    .card {
+      background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Kolade Sossou</h1>
+    <p>Développeur Web junior basé au Bénin 🇧🇯</p>
   </div>
 
   <div class="section card">
-    <h2>Contact</h2>
-    <p>Email : koladesossou5@gmail.com</p>
-    <p>WhatsApp : +229 59044196</p>
+    <h2>À propos</h2>
+    <p>Je suis en formation de développement web. J'apprends HTML, CSS, JavaScript, WordPress, et je suis passionné par la création de sites modernes et simples.</p>
   </div>
-</body>
+
+  <div class="section card">
+    <h2>Mes compétences</h2>
+    <ul>
+      <li>HTML / CSS</li>
+      <li>JavaScript</li>
+      <li>WordPress (Elementor)</li>
+      <li>Responsive Design</li>
+    </ul>
+  </div>
+
+  <div class="section card">
+    <h2>Mes projets</h2>
+      <div class="section card">
+        <h2>Projet JavaScript : Calculateur de pourcentage</h2>
+        <p>Ce projet montre l'utilisation de JavaScript pour effectuer un petit calcul interactif.</p>
+      
+        <label>Valeur de base :</label><br />
+        <input type="number" id="base" placeholder="Ex: 200" /><br /><br />
+      
+        <label>Pourcentage :</label><br />
+        <input type="number" id="pourcent" placeholder="Ex: 15" /><br /><br />
+
+          <button onclick="calculerPourcentage()">Calculer</button>
+        
+          <p id="resultat" style="margin-top: 20px; font-weight: bold;"></p>
+        </div>
+        
+        <script>
+          function calculerPourcentage() {
+            const base = parseFloat(document.getElementById("base").value);
+            const pourcent = parseFloat(document.getElementById("pourcent").value);
+        
+            if (isNaN(base) || isNaN(pourcent)) {
+              document.getElementById("resultat").innerText = "Veuillez entrer deux nombres valides.";
+              return;
+            }
+
+              const resultat = (base * pourcent) / 100;
+              document.getElementById("resultat").innerText = ${pourcent}% de ${base} = ${resultat};
+            }
+          </script>
+            </div>
+          
+            <div class="section card">
+              <h2>Contact</h2>
+              <p>Email : koladesossou5@gmail.com</p>
+              <p>WhatsApp : +229 59044196</p>
+            </div>
+          </body>
+          </html>
+            </div>
+          
+            <div class="section card">
+              <h2>Contact</h2>
+              <p>Email : koladesossou5@gmail.com</p>
+              <p>WhatsApp : +229 59044196</p>
+            </div>
+          </body>
 </html>
